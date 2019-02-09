@@ -5,7 +5,6 @@ jobs:
       - image: circleci/python:3.7
     steps:
       - checkout
-
       - restore_cache:
         keys:
           - v1-dependencies-{{ .Branch }}-{{ checksum "requirements.txt" }}
@@ -16,12 +15,10 @@ jobs:
           python -m venv venv
           . venv/bin/activate
           pip install .
-
       - save_cache:
         paths:
           - ./venv
         keys: v1-dependencies-{{ .Branch }}-{{ checksum "requirements.txt" }}
-
       - run:
         name: run tests
         command: |
