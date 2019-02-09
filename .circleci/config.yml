@@ -6,21 +6,21 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-        keys:
-          - v1-dependencies-{{ .Branch }}-{{ checksum "requirements.txt" }}
-          - v1-dependencies-{{ .Branch }}
+          keys:
+            - v1-dependencies-{{ .Branch }}-{{ checksum "requirements.txt" }}
+            - v1-dependencies-{{ .Branch }}
       - run:
-        name: install deps
-        command: |
-          python -m venv venv
-          . venv/bin/activate
-          pip install .
+          name: install deps
+          command: |
+            python -m venv venv
+            . venv/bin/activate
+            pip install .
       - save_cache:
-        paths:
-          - ./venv
-        keys: v1-dependencies-{{ .Branch }}-{{ checksum "requirements.txt" }}
+          paths:
+           - ./venv
+          keys: v1-dependencies-{{ .Branch }}-{{ checksum "requirements.txt" }}
       - run:
-        name: run tests
-        command: |
-          . venv/bin/activate
-          pytest
+          name: run tests
+          command: |
+            . venv/bin/activate
+            pytest
