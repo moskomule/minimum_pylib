@@ -16,3 +16,18 @@ Use `pytest`.
 
 Use [CircleCI](https://circleci.com/).
 * Go to **Add Projects** page, select the repository and set up project.
+
+## Documents
+
+Use Sphinx. (`pip install Sphinx`)
+
+```bash
+mkdir docs
+sphinx-quickstart -q --project=PROJECT --author=AUTHOR --ext-autodoc --makefile --sep docs
+
+# fix conf.py and index.rst
+sphinx-apidoc -f -o ./docs/source PROJECT
+cd docs
+touch .nojekyll
+make html
+```

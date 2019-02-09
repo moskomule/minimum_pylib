@@ -13,6 +13,15 @@ def _default_value(x):
 
 
 def cum_add(*args):
+    """
+    Add given values
+
+    Example::
+
+    cum_add("a", "b", "c")
+    # abc
+
+    """
     x, _type = _default_value(args[0])
     for v in args:
         if not isinstance(v, _type):
