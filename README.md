@@ -32,3 +32,17 @@ make html
 ```
 
 * Go to the project page's `Settings/GitHub Pages`.
+* Do not forget to add `index.html` in `docs` directory.
+* Deployed to https://moskomule.github.io/PROJECT.
+
+### Theme
+
+ReadDoc's theme is awesome. `pip install sphinx_rtd_theme` and add the followings to `conf.py`.
+
+```python
+import sphinx_rtd_theme
+
+html_theme = "sphinx_rtd_theme"
+
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+```
