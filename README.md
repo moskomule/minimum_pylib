@@ -14,8 +14,7 @@ Use `pytest`.
 
 ## CI
 
-Use [CircleCI](https://circleci.com/).
-* Go to **Add Projects** page, select the repository and set up project.
+* Go to  [CircleCI](https://circleci.com/)'s `Add Projects` page, select the repository and set up project.
 
 ## Documents
 
@@ -31,3 +30,5 @@ cd docs
 touch .nojekyll
 make html
 ```
+
+* Go to the project page's `Settings/GitHub Pages`.
