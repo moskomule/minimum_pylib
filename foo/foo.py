@@ -1,4 +1,5 @@
 from numbers import Number
+from typing import Union, Iterable
 
 
 def _default_value(x):
@@ -12,14 +13,16 @@ def _default_value(x):
         raise TypeError("Unknown Type!")
 
 
-def cum_add(*args):
+def cum_add(*args: Iterable[Union[Number, list, str]]) -> Union[Number, list, str]:
     """
     Add given values
 
+    :param *args: Arguments to be added.
+
     Example::
 
-    cum_add("a", "b", "c")
-    # abc
+        cum_add("a", "b", "c")
+        # abc
 
     """
     x, _type = _default_value(args[0])

@@ -2,6 +2,8 @@
 
 [![CircleCI](https://circleci.com/gh/moskomule/minimum_pylib.svg?style=svg)](https://circleci.com/gh/moskomule/minimum_pylib)
 
+[Documents](https://moskomule.github.io/PROJECT)
+
 **A quasi-minimum template for Python libraries**
 
 ## Package
@@ -37,7 +39,7 @@ make html
 
 ### Theme
 
-ReadDoc's theme is awesome. `pip install sphinx_rtd_theme` and add the followings to `conf.py`.
+ReadDoc's theme is awesome. Install it with `pip install sphinx_rtd_theme` and add the followings to `conf.py`.
 
 ```python
 import sphinx_rtd_theme
