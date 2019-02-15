@@ -2,7 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/moskomule/minimum_pylib.svg?style=svg)](https://circleci.com/gh/moskomule/minimum_pylib)
 
-[Documents](https://moskomule.github.io/PROJECT)
+[Documents](https://moskomule.github.io/minumum_pylib)
 
 **A quasi-minimum template for Python libraries**
 
