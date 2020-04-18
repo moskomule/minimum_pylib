@@ -1,52 +1,21 @@
 # minimum_pylib
 
-![](https://github.com/moskomule/minimum_pylib/workflows/pytest/badge.svg)
-[![CircleCI](https://circleci.com/gh/moskomule/minimum_pylib.svg?style=svg)](https://circleci.com/gh/moskomule/minimum_pylib)
+![](https://github.com/moskomule/minimum_pylib/workflows/pytest/badge.svg) [![CircleCI](https://circleci.com/gh/moskomule/minimum_pylib.svg?style=svg)](https://circleci.com/gh/moskomule/minimum_pylib)
+[![document](https://img.shields.io/static/v1?label=doc&message=minimum_pylib&color=blue)](https://moskomule.github.io/minimum_pylib)
 
-[Documents](https://moskomule.github.io/minimum_pylib)
-
-**A quasi-minimum template for Python libraries**
+This repository contains minimum Python library with tests and documentations.
 
 ## Package
 
-Install with `python setup.py install` or `pip install git+https://github.com/moskomule/minimum_pylib`.
+Package can be installed by cloning and `python setup.py install`, or `pip install git+https://github.com/USERNAME/REPOSITORY.git`.
 
-## Test
+## Tests
 
-Use `pytest`.
+[`tests`](./tests) contains tests using `pytest`.
 
-## CI
+Tests are run automatically using GitHub Action (see `.github/wokflows/action.yml`) and CircleCI (see `.circleci/config.yml`). To enable CicleCI, login and add repository in `Add project` page.
 
-* GitHub Actions can be used. See `.github/workflows/action.yml`.
-* Go to  [CircleCI](https://circleci.com/)'s `Add Projects` page, select the repository and set up project.
 
 ## Documents
 
-Use Sphinx. (`pip install Sphinx`)
-
-```bash
-mkdir docs
-sphinx-quickstart -q --project=PROJECT --author=AUTHOR --ext-autodoc --makefile --sep docs
-
-# fix conf.py and index.rst
-sphinx-apidoc -f -o ./docs/source PROJECT
-cd docs
-touch .nojekyll
-make html
-```
-
-* Go to the project page's `Settings/GitHub Pages`.
-* Do not forget to add `index.html` in `docs` directory.
-* Deployed to https://moskomule.github.io/PROJECT.
-
-### Theme
-
-ReadDoc's theme is awesome. Install it with `pip install sphinx_rtd_theme` and add the followings to `conf.py`.
-
-```python
-import sphinx_rtd_theme
-
-html_theme = "sphinx_rtd_theme"
-
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-```
+[`docs`](./docs) contains documents using `Sphinx`. Documents are automatically generated using Github Action (see `.github/workflows/ghpage.yml`) and deployed to `https://USERNAME.github.io/REPOSITORY`. First configure in the repository's `Settings/GitHub Pages`.

@@ -23,6 +23,7 @@ jobs:
         run: |
           . venv/bin/activate
           cd docs
+          make clean
           make html
 
       - name: push
