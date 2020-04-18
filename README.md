@@ -1,5 +1,6 @@
 # minimum_pylib
 
+![](https://github.com/moskomule/minimum_pylib/workflows/pytest/badge.svg)
 [![CircleCI](https://circleci.com/gh/moskomule/minimum_pylib.svg?style=svg)](https://circleci.com/gh/moskomule/minimum_pylib)
 
 [Documents](https://moskomule.github.io/minimum_pylib)
