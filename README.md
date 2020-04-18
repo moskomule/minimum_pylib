@@ -16,6 +16,7 @@ Use `pytest`.
 
 ## CI
 
+* GitHub Actions can be used. See `.github/workflows/action.yml`.
 * Go to  [CircleCI](https://circleci.com/)'s `Add Projects` page, select the repository and set up project.
 
 ## Documents
